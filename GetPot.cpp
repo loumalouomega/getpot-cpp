@@ -2210,7 +2210,7 @@ GetPot::unidentified_nominuses(const STRING_VECTOR& Knowns) const
     return ufos;
 }
 
-bool
+__GETPOT_INLINE bool
 GetPot::__constraint_check(const std::string& Value, const char* ConstraintStr,
                            bool ThrowExceptionF) const
 {
