@@ -1,0 +1,2 @@
+# getpot-cpp
+  Tool to parse the command line and configuration files.  Powerful command line and configuration file parsing for C++, Python, Ruby and Java (others to come). This tool provides many features, such as separate treatment for options, variables, and flags, unrecognized object detection, prefixes and much more. MIRROR OF https://sourceforge.net/projects/getpot/ WITH SOME MINOR CORRECTIONS
