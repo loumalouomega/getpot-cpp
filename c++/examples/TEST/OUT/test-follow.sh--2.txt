@@ -1,0 +1,10 @@
+../follow --alpha 3.14 --beta 0.815 --size -1 1 --user arnold.nyme -32141 --user ruth.chelle 3
+
+Alpha (float)   = 3.14
+Beta  (integer) = 4711
+Names           = arnold.nyme, ruth.chelle
+
+Special numbers = -32141 and 3
+
+x-size, y-size  = -1, 1
+

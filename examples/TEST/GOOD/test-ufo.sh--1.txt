@@ -1,0 +1,4 @@
+../ufo yes no -i source.cpp --arguments
+Unidentified Arguments (other than '--arguments', '-h', '--help', 'yes', 'no'):
+     -i
+     source.cpp

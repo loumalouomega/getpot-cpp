@@ -1,0 +1,29 @@
+Full pathname:
+3.7
+7.3
+4.2
+222.2
+1
+Prefix ending with slash:
+3.7
+7.3
+4.2
+2.4
+Prefix ending without slash:
+777.7
+888.8
+111.1
+222.2
+--(Content)---------------------------------------
+argc = 10
+bug-2990791.pot
+[vehicle]
+vehicle/B=3.7
+[plane]
+plane/C=7.3
+[./a]
+plane/a/D=4.2
+plane/a/E=2.4
+[]
+Root=1.0
+

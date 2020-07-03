@@ -1,0 +1,20 @@
+../follow --alpha 3.14 --beta 0.815 --size -1 1 --user arnold.nyme 32141 --user ruth.chelle
+
+Alpha = 3.14
+Beta  = 0
+Names           = arnold.nyme and ruth.chelle
+
+Special numbers = 32141 and 67
+
+x-size, y-size = -1, 1
+
+../follow --alpha 3.14 --beta 0.815 --size -1 1 --user arnold.nyme -32141 --user ruth.chelle 3
+
+Alpha = 3.14
+Beta  = 0
+Names           = arnold.nyme and ruth.chelle
+
+Special numbers = -32141 and 3
+
+x-size, y-size = -1, 1
+

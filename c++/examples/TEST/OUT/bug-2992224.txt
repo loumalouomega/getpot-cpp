@@ -1,0 +1,15 @@
+Constraint : (<= 5 & % 2) | (> 5 & ! % 2)
+             -- less or equal five
+                and divisable by two
+             -- or greater than five
+                and not divisable by two
+a0 = 0
+a1 = -1000
+a2 = 2
+a3 = -1000
+a4 = 4
+a5 = -1000
+a6 = -1000
+a7 = 7
+a8 = -1000
+a9 = 9

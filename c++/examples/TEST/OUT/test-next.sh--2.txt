@@ -1,0 +1,7 @@
+../next 'hallo welt' gugu 47.1 logo
+
+A = 0
+B = 256
+Name           = 47.1
+Special number = 66
+

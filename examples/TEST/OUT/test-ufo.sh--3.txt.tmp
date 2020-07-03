@@ -1,0 +1,16 @@
+../ufo zfd if=source.cpp force n=13 -l -zrt -olp --flags
+-- Unaccepted flags in argument 1:
+      'd'
+
+   Accepted flags: 'x' 'z' 'f' 'j' 'c' 't'
+
+-- Unaccepted flags in options (argument with one '-'):
+      'z'
+      'r'
+      't'
+      'o'
+      'l'
+      'p'
+      'p'
+
+   Accepted flags in options: 'l' 't' 'r' 'm'

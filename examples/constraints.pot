@@ -1,0 +1,47 @@
+# Example: Testing Constraints on Variables
+#
+# (C) 2009 Frank-Rene Schaefer
+#
+# ABSOLUTELY NO WARRANTY
+##############################################################
+
+booly_0 = true
+booly_1 = true
+booly_2 = true
+
+number = 6
+real = 5.5
+boolean = true
+string = tests
+
+
+[string]
+
+    good1 = fritz
+    good2 = otto
+
+    bad1 = efritz
+    bad2 = fritze
+    bad3 = notto
+    bad4 = otton
+    bad5 = otdo
+
+[number]
+
+    good1 = 8
+    good2 = 999
+    good3 = 16
+
+    bad1 = 15
+    bad2 = 1
+    bad3 = 18
+    bad4 = 20
+
+[negation]
+
+    good_number = 4712
+    bad_number  = 4711
+
+    good_string = fine
+    bad_string  = rotten
+

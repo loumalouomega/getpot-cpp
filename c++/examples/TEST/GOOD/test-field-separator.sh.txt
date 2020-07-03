@@ -1,0 +1,12 @@
+../field_separator fs='.' test='129. 11. 32.  5'
+field 0: "129"
+field 1: " 11"
+field 2: " 32"
+field 3: "  5"
+field 4: "empty"
+../field_separator fs='. ' test='129. 11. 32.  5'
+field 0: "129"
+field 1: "11"
+field 2: "32"
+field 3: "5"
+field 4: "empty"

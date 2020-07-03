@@ -1,0 +1,30 @@
+../direct_follow -Uss
+Users   = ss, Karl, Heinz
+Values  = 3.14, 9.81, 1.62
+Numbers = 12, 43, 64
+../direct_follow --help
+
+Example to use direct_follow()-functions:
+
+USAGE:
+--help, -h  get some help about this program.
+
+-Ustring    specify user name as string
+-Vx         specify a value given as x
+-NUMx       specify number given as x
+
+a total amount of three of each is expected.
+try 'tails.cpp' for indefinite number of arguments.
+
+../direct_follow -Ududu -Uim -V12 -URadio
+Users   = dudu, im, Radio
+Values  = 12, 9.81, 1.62
+Numbers = 12, 43, 64
+../direct_follow -Ududu -Uim -V12 -URadio -V13
+Users   = dudu, im, Radio
+Values  = 12, 13, 1.62
+Numbers = 12, 43, 64
+../direct_follow -Ududu -Uim -V12 -URadio -V13 -N12
+Users   = dudu, im, Radio
+Values  = 12, 13, 1.62
+Numbers = 12, 43, 64

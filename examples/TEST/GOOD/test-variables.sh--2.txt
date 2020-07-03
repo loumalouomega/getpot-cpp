@@ -1,0 +1,9 @@
+Specified Parameters:
+float   = 3.14
+integer = 1970
+string  = frank-rene schaefer
+
+Vector elements:
+Element 0 (double) = 8.15
+Element 1 (string) = sourceforge
+Element 2 (int)    = 42

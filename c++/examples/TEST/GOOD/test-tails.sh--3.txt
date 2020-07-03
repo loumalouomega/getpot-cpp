@@ -1,0 +1,8 @@
+../tails -Uhallo -Udu -Uschoene -Uwelt
+Strings following -U:
+   'hallo'
+   'du'
+   'schoene'
+   'welt'
+Integers following -V:
+Doubles following -NUM:

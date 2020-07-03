@@ -1,0 +1,4 @@
+../ez-ufo zfd x=12 y=234 loength=21 height=21 n=2 --variables
+Unidentified Variables (other than 'x', 'y', 'z', 'length', 'height'):
+     loength
+     n

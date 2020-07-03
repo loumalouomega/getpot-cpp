@@ -1,0 +1,5 @@
+../direct_follow -Ududu -Uim -V12 -URadio -V13
+Users   = dudu, im, Radio
+Values  = 12, 13, 1.62
+Numbers = 12, 43, 64
+Booleans = 0, 0, 1

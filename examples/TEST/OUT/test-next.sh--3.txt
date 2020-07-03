@@ -1,0 +1,7 @@
+../next 0.000009 0.000009 12 65535 df aee ff 123 000d '\n'
+
+A = 9e-06
+B = 0
+Name           = 12
+Special number = 65535
+

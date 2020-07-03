@@ -1,0 +1,4 @@
+../ufo n=21 -i in.dat -o out.dat /etc/fstab force --nominuses 
+Unused Nominus Arguments (other than arguments after -i and -o):
+     /etc/fstab
+     force

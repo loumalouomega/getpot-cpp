@@ -1,0 +1,4 @@
+../get hallo liebe Leute hallo guten tag 2 3 4
+A (argument no 4) = 256
+B (argument no 1) = 3.14
+C (argument no 2) = liebe

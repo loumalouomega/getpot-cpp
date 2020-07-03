@@ -1,0 +1,61 @@
+../expand --directory ../
+[1.1]--------------------------------------------------------------------------
+Information 0: getpot.sourceforge.net
+[1.2]--------------------------------------------------------------------------
+Information 0: Dr. Frieda LaBlonde: 5/24
+Information 1: Dr. Frederique Mouillard: 3/4
+[1.3]--------------------------------------------------------------------------
+Information 0: Citroen-2CV
+Information 1: 30
+[1.4]--------------------------------------------------------------------------
+Information 0: Deuche
+Information 1: Grandpa's Slide
+[2.1]--------------------------------------------------------------------------
+Information 0: even expressions like ${my-car} are left as they are
+Information 1: \\-ing (backslashing) works still the same way
+Information 2: backslashes allow one to have spaces w/o quotes
+[2.2]--------------------------------------------------------------------------
+Information 0: simpleconcatinationwithoutwhitespacesresultsinamess
+Information 1: In France, the Citroen-2CV is called 'La Deuche'
+         
+[2.3]--------------------------------------------------------------------------
+Information 0: We spell your name 'Fillip'
+Information 1: The Beatles
+Information 2: I switched from Deuche to Beetle
+[3.1]--------------------------------------------------------------------------
+Information 0: 2.000000e+00
+Information 1: 4.711000e+03
+Information 2: 9.000000e+00
+Information 3: 4.687000e+03
+Information 4: 1.440000e+02
+Information 5: 1.600000e+01
+Information 6: 2.000000e+00
+Information 7: 2.000000e+00
+[3.2]--------------------------------------------------------------------------
+Information 0: 6.553600e+04
+Information 1: 2.560000e+02
+[3.3]--------------------------------------------------------------------------
+Information 0: 0
+Information 1: 1
+Information 2: 1
+Information 3: 0 but 1 and 1
+Information 4: 0 but 1 and 0
+Information 5: 1 but 0 and 1
+Information 6: The real name for Deuche is number 3
+Information 7: The first element less than 2 is element number 5
+[3.4]--------------------------------------------------------------------------
+Information 0: Your guess was right
+Information 1: x (=12) is less than y (=14)
+Information 2: La Guerre des Etoiles
+[3.5]--------------------------------------------------------------------------
+Information 0: kraft
+Information 1: e
+Information 2: pruefstelle
+Information 3: Wasser
+Information 4: Moskow Heidelberg Grenoble Marseille Disneyland
+Information 5: Marseille Disneyland
+Information 6: Moskow Heidelberg Grenoble Marseille
+Information 7: Disneyland
+[3.6]--------------------------------------------------------------------------
+Information 0: 4.997700e-01
+Information 1: 8.657553e-01

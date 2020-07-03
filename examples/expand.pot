@@ -1,0 +1,282 @@
+# -*- getpot -*- GetPot mode activation for emacs
+#
+# Example input file to be parsed by 'GetPot':
+#-------------------------------------------------------------------------------
+# PURPOSE:
+#   Demonstration of the abilities of the $-Bracket Language in GetPot.
+#
+#
+# (*) STRING OPERATORS:
+#
+#   ${string}  variable replacement (possibly recursive):
+#         replace ${}-expression by content of variable named 'string'.
+#
+#   ${:string} pure strings:
+#         replace ${}-expression by the string 'string' itself (including 
+#	  whitespace). This becomes important in combination with macro 
+#         expansion. It allows ${}-expressions inside strings without 
+#         being parsed directly.
+#
+#   ${& string1 string2 string3 ... } concatination:
+#         concatinate 'string1', 'string2', 'string3', etc. to one single 
+#         string whithout any kind of whitespace in between.
+#
+#   ${<-> string orginal replacement} replacement:
+#         replace all occurences of 'original' in 'string' with 'replacement'
+#
+# (*) ARITHMETIC OPERATORS:
+#
+#   ${+ arg1 arg2 arg3 ...} plus:
+# 	replace ${}-expression by the sum: 'arg1' + 'arg2' + 'arg3' + ...
+#
+#   ${* arg1 arg2 arg3 ...} multiplication:
+# 	replace ${}-expression by the product: 'arg1' * 'arg2' * 'arg3' * ...
+#
+#   ${- arg1 arg2 arg3 ...} substraction:
+# 	replace ${}-expression by: 'arg1' - 'arg2' - 'arg3' - ...
+#
+#   ${/ arg1 arg2 arg3 ...} division:
+# 	replace ${}-expression by: 'arg1' / 'arg2' / 'arg3' / ...
+#
+# (*) COMPARISON OPERATORS:
+#
+#   ${== arg0 arg1 arg2 ...} equal:
+# 	returns the number of the first argument starting with '1' for 'arg1'  
+# 	that is equal to 'arg0'.
+# 	returns '0' in case none is equal.
+#   ${> arg0 arg1 arg2 ...} greater:
+#   ${< arg0 arg1 arg2 ...} less:
+#   ${>= arg0 arg1 arg2 ...} greater or equal:
+#   ${<= arg0 arg1 arg2 ...} less or equal:
+#       	analogous to ${== }-operator.
+#
+# (*) CONDITIONAL EXPANSION:
+#
+#   ${? arg0 if-string else-string} if-then statement:
+#         return 'if-string' in case arg0 == 1 and 'else-string' else.
+#
+#   ${?? arg0 string1 string 2 string3 ...} choice.
+#         return string0 if arg1 == 1, string1 if arg1 == 2, etc.
+#
+# (*) VECTOR/STRING SUBSCRIPTION:
+#
+#   ${@: string index} letter:	
+# 	return letter number 'index' in 'string'.
+#
+#   ${@: string index1 index2} substrings:
+# 	return substring in 'string' from 'index1' to 'index2'
+#
+#   ${@ variable index} vector element:
+# 	return element number 'index' in 'variable'	
+#
+#   ${@ variable index1 index2} sub-vector:
+# 	return sub-vector in 'variable' from element 'index1' to 
+# 	element 'index2'.
+#
+# (*) MAKRO EXPANSION:
+#
+#   ${! variable} expand:
+# 	replacement ${}-expression by the evaluation of the content of 'variable'.
+#         The variable should be defined with a pure string (${: }) so that expressions
+# 	inside it are not parsed during the assignment.
+#
+# (C) 2002 Frank R. Schaefer
+# License Terms: GNU GPL
+################################################################################
+
+#-------------------------------------------------------------------------------
+# (1) variable replacement -----------------------------------------------------
+#-------------------------------------------------------------------------------
+name = GetPot
+
+[${name}] # meaning: [GetPot]
+address = getpot.sourceforge.net
+[]
+info0 = ${GetPot/address}
+
+[1.2] # advanced variable replacement ------------------------------------------
+[Philosophy]
+   boss       = 'Dr. Frederique Mouillard'
+   members    = 4
+   professors = 3
+[Mechanical-Engineering]
+   boss       = Dr.\ Frieda\ LaBlonde
+   members    = 24
+   professors = 5
+
+[]
+x1 = Mechanical-Engineering
+x2 = Philosophy
+[1.2]
+info0 = '${${x1}/boss}: ${${x1}/professors}/${${x1}/members}'
+info1 = '${${x2}/boss}: ${${x2}/professors}/${${x2}/members}'
+
+
+[1.3] # recursive replacements -------------------------------------------------
+#      1.3.1 simple replacements
+car            = Citroen-2CV
+ground-vehicle = car
+vehicle        = ground-vehicle
+object         = vehicle
+# ${object}         --> vehicle
+# ${vehicle}        --> ground-vehicle
+# ${ground-vehicle} --> car
+# ${car}            --> Citroen-2CV
+
+# note that even variable names can be composed of ${ } expressions
+variable = info0
+${variable} = '${${ ${ ${object}}}}'
+
+#      1.3.2 conglomerate variable names
+[Citroen-2CV]
+	[./wheels]
+		[./front]
+			[./right]
+			radius = 30 # [cm]
+
+[1.3]
+part      = wheels
+attribute = radius
+position  = front/right
+
+variable  = info1
+${variable} = '${${${${${object}}}}/${part}/${position}/${attribute}}'
+
+[1.4] # dictionaries -----------------------------------------------------------
+
+[Nicknames]
+	BMW         = Beamer
+	Mercedez    = Grandpa\'s\ Slide
+	Volkswagen  = Beetle
+        Citroen-2CV = Deuche
+[1.4]
+info0 = '${Nicknames/${1.3/info0}}'
+my-car = Mercedez
+info1 = '${Nicknames/${1.4/my-car}}'
+
+#-------------------------------------------------------------------------------
+# (2) string expressions -------------------------------------------------------
+#-------------------------------------------------------------------------------
+[2.1] # pure strings -----------------------------------------------------------
+info0 = ${:even expressions like ${my-car} are left as they are}
+info1 = ${:\\-ing (backslashing) works still the same way}
+info2 = ${:backslashes allow one to have spaces w/o quotes}
+
+[2.2] # concatination ----------------------------------------------------------
+info0  = ${& simple concatination without whitespaces results in a mess}
+info1 =  '${& ${:In France, the } ${1.3/info0} 
+          ${: is called \'La } ${Nicknames/${1.3/info0}} \'}
+         '
+
+[2.3] # replacement ------------------------------------------------------------
+info0 = 'We spell your name \'${<-> Phillip Ph F}\''
+info1 = 'The ${<-> ${Nicknames/Volkswagen} ee ea}s'
+car = Nicknames/Citroen-2CV
+info2 = 'I switched from ${${car}} to ${${<-> ${car} Citroen-2CV Volkswagen}}'
+
+#-------------------------------------------------------------------------------
+# (3) numeric expressions ------------------------------------------------------
+#-------------------------------------------------------------------------------
+[3.1] # basics -----------------------------------------------------------------
+info0 = ${+ 1 1}
+x = 4699 y = 14 z = 4
+# don't forget to glue the minus sign to negative numbers
+info1 = ${+ ${x} ${y} -2}
+
+info2 = ${- 10 1}
+info3 = ${- ${x} ${y} -2}
+
+info4 = '${* 12 12}'
+info5 = '${* 2 2 ${z}}'
+
+info6 = '${/ 12 6}'
+info7 = '${/ 144 12 3 2}'
+
+[3.2] # power expressions ------------------------------------------------------
+info0 = '${^ 2 16}'
+info1 = '${^ 2 2 2 2}'  # ((2^2 = 4)^2 = 16)^2 = 256
+
+
+[3.3] # comparisons ------------------------------------------------------------
+info0 = ${== 1 2}
+info1 = ${== Deuche ${${2.3/car}}}
+info2 = ${== 1.0 1.000}
+info3 = '${>= 3.14 12} but ${>= 3.14 0.0} and ${>= 3.14 3.140000}'
+info4 = '${< 12 3.14} but ${< 3.14 3.141} and ${> Berta Vladimir}'
+info5 = '${> 12 3.14} but ${> 3.14 3.141} and ${> Zeppelin Alberta}'
+
+# which one is right ? ---------------------------------------------------------
+# comparison operator returns number of first matching in list
+info6 = 'The real name for 'Deuche' is number ${== Deuche
+				                   ${Nicknames/Volkswagen}
+	   	                                   ${Nicknames/Mercedez}
+	                                           ${Nicknames/Citroen-2CV}
+		                                   ${Nicknames/BMW}}'
+
+info7 = 'The first element less than 2 is element number ${> 2 10 1001 3 6 1 9 -10}'
+
+[3.4] # conditions -------------------------------------------------------------
+guess = Citroen-2CV
+info0 = 'Your guess was ${? ${== Citroen-2CV ${guess}} right wrong}'
+x = 12 y = 14
+info1 = 'x (=${x}) is ${?${> ${x} ${y}} greater less} than y (=${y})'
+[msg]
+english   = 'Star Wars'
+francais  = 'La Guerre des Etoiles'
+espagnol  = 'Las Guerras De la Estrella'
+italiano  = 'Le Guerre Della Stella'
+deutsch   = 'Krieg der Beruehmten'
+portugues = 'As Guerras Da Estrela'
+
+[3.4] # choices 
+domain = .fr
+info2 = '${?? ${== ${domain} .de .uk .fr .es .it .pt} 
+              ${msg/deutsch}
+              ${msg/english}
+              ${msg/francais}
+              ${msg/espagnol}
+              ${msg/italiano}
+              ${msg/portugues}}'
+
+[3.5] # vector/string subscription ---------------------------------------------
+#       (note, that '-1' stands for end of array)
+# string subscription ${@:
+info0 = '${@: Wasserkraftwerkinstallationsunternehmenspruefstelle 6 10}'
+info1 = '${@: Wasserkraftwerkinstallationsunternehmenspruefstelle 4}'
+info2 = '${@: Wasserkraftwerkinstallationsunternehmenspruefstelle 40 -1}'
+info3 = '${@: Wasserkraftwerkinstallationsunternehmenspruefstelle 0 5}'
+
+my-vector = 'Cordoba Madrid Buenos-Aires Kairo Moskow Heidelberg 
+	     Grenoble Marseille Disneyland'
+
+# vector subscription ${@:
+info4 = ${@ my-vector  4  -1} # element 4 until end
+info5 = ${@ info4  3  4}      # element 3 and 4
+info6 = ${@ info4  0  3}      # element 0 until 3 (3 included)
+info7 = ${@ info4  4}         # element 4
+
+
+[3.6] # macro evalutation ------------------------------------------------------
+# Note that the accuracy is horrible :-) !
+# approximation of a sinus (defined as a pure string):
+#     sin(x) = x -1/6 x^3 + 1/120 x^5 -1/5400 x^7 .... 
+x2  = ${: ${* ${x} ${x}}}
+x4  = ${: ${* ${!x2} ${!x2}}}
+x6  = ${: ${* ${!x4} ${!x2}}}
+sin = ${: ${* ${x} 
+	       ${+ 1       
+                   ${/ ${!x2} -6}  
+                   ${/ ${!x4} 120}   
+                   ${/ ${!x6} -5040}
+               }	    
+           }
+       }
+
+convert = ${/ 3.14 180.0}  # [degree] -> [rad]
+
+x = ${* 30 ${convert}}   
+info0 = ${!sin}
+
+x = ${* 60 ${convert}}   
+info1 = ${!sin}
+

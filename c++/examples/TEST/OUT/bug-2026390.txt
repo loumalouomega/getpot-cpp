@@ -1,0 +1,17 @@
+argc = 14
+./bug-2026390.pot
+sections=dms
+[dms]
+dms/apid=17
+[dms/17]
+dms/17/type=1
+[dms/17/1]
+dms/17/1/subtype=2
+[dms/17/1/2]
+dms/17/1/2/pad=15001
+[dms/17/i]
+dms/17/i/subtype=2
+[dms/17/i/2]
+dms/17/i/2/pad=15003
+
+Process had 1 seconds time to do its job [end].

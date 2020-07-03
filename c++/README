@@ -1,16 +1,9 @@
-# getpot-cpp
-
-## Description
-
-  Tool to parse the command line and configuration files.  Powerful command line and configuration file parsing for C++, Python, Ruby and Java (others to come). This tool provides many features, such as separate treatment for options, variables, and flags, unrecognized object detection, prefixes and much more. MIRROR OF https://sourceforge.net/projects/getpot/ WITH SOME MINOR CORRECTIONS
-
-## Original README
 GetPot - C++:
 --------------
 
 Attention: This version contains a couple of beautiful
----------- new features, that are not documented yet.
-
+---------- new features, that are not documented yet. 
+ 
            E.g.: -- automated ufo detection
 	         -- arbitrary comment delimiters
 		 -- arbitrary vector field separators
@@ -19,14 +12,14 @@ Attention: This version contains a couple of beautiful
 
           Please, refere to the example/ directory
           for usage descriptions.
-
-This is the C++ version of the popular GetPot library for
+           
+This is the C++ version of the popular GetPot library for 
 command line and input file parsing. The documentation
 can be downloaded at:
 
     http://getpot.sourceforge.net
 
-The files in the 'examples' directory should be enough, though, to be
+The files in the 'examples' directory should be enough, though, to be 
 able to use this library. It is fairly easy to use.
 
 Installation:
@@ -52,6 +45,6 @@ Thanks for using this software.
 Enjoy !
 
 
-Juli 2005,
+Juli 2005, 
 Frank R. Schaefer
 

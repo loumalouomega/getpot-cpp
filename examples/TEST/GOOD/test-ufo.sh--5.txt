@@ -1,0 +1,6 @@
+../ufo --sections --input-file ../example.pot
+Known sections:
+                 '/', 'chassis/', 'chassis/doors/'
+
+Unidentified subsections of 'vehicle/' in file 'example.pot':
+     vehicle/tires/

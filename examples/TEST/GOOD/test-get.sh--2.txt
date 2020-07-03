@@ -1,0 +1,4 @@
+../get 1 2
+A (argument no 4) = 256
+B (argument no 1) = 1
+C (argument no 2) = 2

@@ -1,0 +1,70 @@
+../absorb --directory ../
+argc = 67
+../example.pot
+booly_0=real
+booly_1=conceivable
+booly_2=impossible
+constraint-test=test 2
+clicks=231
+acceleration=1.231
+[vehicle]
+vehicle/wheel-base=8.1
+vehicle/initial-xyz=100. 0.1  5.0
+[./tires]
+vehicle/tires/B=3.7976
+vehicle/tires/C=1.25
+vehicle/tires/E=-0.5
+vehicle/tires/D=64322.404
+[../chassis]
+vehicle/chassis/Roh=1.21
+vehicle/chassis/S=5.14
+vehicle/chassis/Cd=0.45
+[./doors]
+vehicle/chassis/doors/number=777
+vehicle/chassis/doors/locks=in place
+[]
+webpage=http://getpot.sourceforge.net/index.html
+user=Frank Schaefer
+latex-formula=\kappa' = \frac{d}{d s} \kappa
+dos-file=C:\Program Files\Applications
+[group]
+group/-x
+group/3134
+group/-b
+group/true
+group/vrai
+group/--rudimental
+group/12
+group/777
+[other]
+other/nonsense
+[user-variables]
+user-variables/preview-coefficient=12 cm
+user-variables/lateral-side-distance=2.1 m/s
+user-variables/control-interval=0.1 s
+user-variables/compensation-ratio=0.4e34 rad/(m*s)
+[pseudo-function-calls/]
+pseudo-function-calls/LE-DEBUT
+pseudo-function-calls/smiley
+pseudo-function-calls/sad
+pseudo-function-calls/new-line
+pseudo-function-calls/1
+pseudo-function-calls/rectangle
+pseudo-function-calls/40
+pseudo-function-calls/10
+pseudo-function-calls/new-line
+pseudo-function-calls/1
+pseudo-function-calls/smiley
+pseudo-function-calls/happy
+pseudo-function-calls/circle
+pseudo-function-calls/15
+pseudo-function-calls/new-line
+pseudo-function-calls/1
+pseudo-function-calls/smiley
+pseudo-function-calls/happy
+pseudo-function-calls/new-line
+pseudo-function-calls/2
+pseudo-function-calls/LA-FIN
+--directory
+../
+

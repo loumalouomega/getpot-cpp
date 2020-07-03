@@ -1,0 +1,15 @@
+# -*- getpot -*- GetPot mode activation for emacs
+
+[vehicle]
+    B = 3.7 
+
+[plane]
+    C = 7.3
+
+[./a]
+
+    D = 4.2
+    E = 2.4
+
+[]
+Root  = 1.0

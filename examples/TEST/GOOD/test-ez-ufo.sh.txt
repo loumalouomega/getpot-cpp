@@ -1,0 +1,65 @@
+../ez-ufo yes no -i source.cpp --arguments
+Unidentified Arguments
+(other than '--arguments', '-h', '--help', 'yes', 'no'):
+     -i
+     source.cpp
+../ez-ufo zfd x=12 y=234 loength=21 height=21 n=2 --variable
+USAGE:  ez-ufo [--help] [--arguments] [--options] [--sections] 
+               [--variables] [--nominuses [-i file] [-o filename]]
+               ... any arguments
+
+PURPOSE: 
+
+Testing   the  GetPot's   ability   to  detect   unknown  flying   objects
+(i.e. un-recognized command line arguments.  The type of flying object you
+want to check for is specified through one of the following options).
+
+ez-ufo  tests the easy  way to  do ufo  detection. Where  'ufo' explicitly
+stated requested arguments, variables,  options, etc., ez-ufo uses the new
+feature of  GetPot, where requested objects are  tagged automatically when
+request functions such as 'follow' and 'get' are called.
+
+
+        --arguments
+             test all arguments against an internal list of possible arguments.
+
+        --options
+             test all options (arguments starting with at least one '-') against
+             an internal list of options.
+
+        --sections
+             reads the input file 'example.pot' for sections that are
+              unidentified. add some sections yourself to test this feature.
+
+        --variables
+             tests all variables specified on the command line against a list
+             of specified variables.
+
+        --nominuses
+             check for unrecognized nominuses. filenames after -i and -o are
+             recognized.
+
+        Once you specified your mode add any number of command line
+        arguments and watch the output.
+
+EXAMPLES:
+        > ./ez-ufo yes no -i source.cpp --arguments
+
+        > ./ez-ufo -i source.cpp --force n=13 -xzt --options
+
+        > ./ez-ufo zfd x=12 y=234 loength=21 height=21 n=2 --variables
+
+        > ./ez-ufo --sections # (edit file section labels in example.pot)
+
+        > ./ez-ufo n=21 -i in.dat -o out.dat /etc/fstab force --nominuses 
+
+AUTHOR: (C) 2003 Frank R. Schaefer
+../ez-ufo yes no -i source.cpp --nominuses -o out.o gogo
+Unused Nominus Arguments (other than arguments after -i and -o):
+     yes
+     no
+     gogo
+../ez-ufo n=21 -i in.dat -o out.dat /etc/fstab force --nominuses
+Unused Nominus Arguments (other than arguments after -i and -o):
+     /etc/fstab
+     force

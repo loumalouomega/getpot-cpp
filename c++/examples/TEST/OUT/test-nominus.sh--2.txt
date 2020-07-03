@@ -1,0 +1,6 @@
+
+(1) iterating with .next_nominus():
+    [sss]	[ddd]	[variable=12]	[fff]	
+(2) extracting nominus vector, then iterating:
+    <sss>	<ddd>	<variable=12>	<fff>	
+

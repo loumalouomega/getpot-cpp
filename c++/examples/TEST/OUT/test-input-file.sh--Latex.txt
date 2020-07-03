@@ -1,0 +1,23 @@
+webpage       = http://getpot.sourceforge.net/index.html
+user          = Frank Schaefer
+dos-file      = C:\Program Files\Applications
+latex-formula = \kappa' = \frac{d}{d s} \kappa
+no. clicks   = 231
+acceleration = 1.231
+wheel-base = 2.65
+wheel-base = 8.1
+vehicle/initial-xyz = 100	0.1	5
+vehicle/tires/B = 3.7976
+              C = 1.25
+              E = -0.5
+              D = 64322.4
+vehicle/chassis/Roh = 1.21
+                S   = 5.14
+                Cd  = 0.45
+vehicle/chassis/doors/number = 777
+                      locks  = in place
+x-ratio      = 3134
+Boolean -b   = 1
+Next Boolean = 0
+sound-mode   = --rudimental
+-x flag in [group] = activated

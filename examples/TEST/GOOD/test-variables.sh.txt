@@ -1,0 +1,30 @@
+../variables float=1e37 integer=38 string='frank-rene schaefer' vector='08.15 sourceforge 42' string=bonjorno
+Specified Parameters:
+float   = 1e+37
+integer = 38
+string  = bonjorno
+
+Vector elements:
+Element 0 (double) = 8.15
+Element 1 (string) = sourceforge
+Element 2 (int)    = 42
+../variables float=3.14 integer=1970 string='frank-rene schaefer' vector='08.15 sourceforge 42'
+Specified Parameters:
+float   = 3.14
+integer = 1970
+string  = frank-rene schaefer
+
+Vector elements:
+Element 0 (double) = 8.15
+Element 1 (string) = sourceforge
+Element 2 (int)    = 42
+../variables float=1e37 integer=1968 string='sonderbar' vector='08.15 sourceforge 42'
+Specified Parameters:
+float   = 1e+37
+integer = 1968
+string  = sonderbar
+
+Vector elements:
+Element 0 (double) = 8.15
+Element 1 (string) = sourceforge
+Element 2 (int)    = 42

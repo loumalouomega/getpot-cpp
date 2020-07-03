@@ -1,0 +1,4 @@
+../flags osterix -hamburg
+first flag  = 1
+second flag = 0
+a, b, or c found = yes

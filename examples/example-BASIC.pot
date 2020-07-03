@@ -1,0 +1,105 @@
+REM  -*- getpot -*- GetPot mode activation for emacs
+REM
+REM Example input file to be parsed by 'GetPot'
+REM
+REM Style of Comment: BASIC Style
+REM
+REM (C) 2001-2003 <fschaef@sourceforge.net> Frank R. Schaefer
+REM License Terms: MIT
+REM ##############################################################################
+REM (*) --------------------------------------------------------------------------
+REM     examples dealing with input file parsing (input-file.py/.cpp/.java etc.)
+REM ------------------------------------------------------------------------------
+bool = true
+constraint-test = 'test 2'
+clicks       = 231   REM [1/s]
+acceleration = 1.231 REM [m/s^2]
+
+[vehicle]
+wheel-base  = 8.1            REM [m]
+initial-xyz = '100. 0.1  5.0' REM [m]
+
+
+   [./tires]     REM i.e. vehicle/tires/ 
+   REM Coefficients for Pacejka's Magic Formula 
+   REM Reference: Bakker, Nyborg, Pacejka: 
+   REM            "Modelling for Use in Vehicle Dynamics Studies", 
+   REM             SAE Technical Paper Series 870421, 1988
+   B = 3.7976    REM [1]
+   C = 1.25      REM [1]
+   E = -0.5      REM [1]
+   D = 64322.404 REM [N]  
+
+   [../chassis]  REM i.e. vehicle/chassis/
+   Roh = 1.21    REM [kg/m^3] density of air 
+   S   = 5.14    REM [m^2]    reference surface
+   Cd  = 0.45    REM [1]      air drag coefficient
+
+      [./doors]  REM i.e. vehicle/chassis/doors/
+      number = 777
+      locks  = 'in place'
+
+
+REM back to the root name space
+[] 
+webpage = http://getpot.sourceforge.net/index.html
+
+REM some words about quotes and backslashes
+REM (1) whitespace requires quotes
+user     = 'Frank Schaefer'                   
+
+REM (2) backslashed quote => quote  
+latex-formula = '\\kappa\' = \\frac{d}{d s} \\kappa' 
+
+REM (3) double backslash in quotes = backslash
+dos-file = 'C:\\Program Files\\Applications'
+
+REM (*) --------------------------------------------------------------------------
+REM     examples using the prefix filter (filter.py/.cpp/.java etc.)
+REM-------------------------------------------------------------------------------
+[group]
+REM playing with pseudo command line arguments:
+REM   note that 
+REM               '-x', '3134' and '--rudimental' 
+REM   will be known as 
+REM               'flags/-x', 'flags/3234' and 'flags/rudimental'.
+REM
+REM   Therefore 3134, for example, is **NOT** a number as long,
+REM   as no prefix filter "flags/" is set.
+-x 3134 
+-b true vrai
+--rudimental 12 777
+
+[other]
+REM this section will be skipped by the 'next' function when the prefix
+REM is set
+nonsense
+
+[user-variables]
+REM This section contains variables that the user defined himself.
+REM The GetPot interpreter uses 'get_variable_names()' in order to
+REM get to know their names.
+preview-coefficient   = '12 cm'
+lateral-side-distance = '2.1 m/s' 
+control-interval      = '0.1 s'
+compensation-ratio    = '0.4e34 rad/(m*s)'
+
+[pseudo-function-calls]
+REM The following code shows how GetPot can be used to emulate
+REM trivial function calls. Please, note that no syntax checking
+REM can be provided by this method.
+
+LE-DEBUT
+smiley    sad
+new-line  1
+REM draw rectangle width = 40, height = 10
+rectangle 40 10
+new-line  1
+smiley    happy
+REM draw circle radius = 15
+circle   15
+new-line  1
+smiley   happy
+new-line 2
+LA-FIN
+

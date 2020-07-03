@@ -1,0 +1,4 @@
+../options --nice beep neep --slice --senal-acustica
+Program terminated.
+Have a nice day.
+../options --nice beep neep --slice --senal-acustica --do-nothing

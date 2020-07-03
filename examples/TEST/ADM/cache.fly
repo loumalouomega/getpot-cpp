@@ -1,0 +1,243 @@
+{
+title: Combining GetPot Objects - Absorbtion;
+file_name: test-absorb.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.841506; 0; ]
+  [ 2; OK; 0.004675; 0; ]
+]
+}
+{
+title: Field Separator in Array Arguments;
+file_name: test-field-separator.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.903497; 0; ]
+  [ 2; OK; 0.004814; 0; ]
+]
+}
+{
+title: Filter Prefixes;
+file_name: test-filter.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ ; OK; 0.934530; 0; ]
+]
+}
+{
+title: Flags;
+file_name: test-flags.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.856684; 0; ]
+  [ 2; OK; 0.004652; 0; ]
+]
+}
+{
+title: GetPot 'get' - function group;
+file_name: test-get.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 0; OK; 0.840297; 0; ]
+  [ 1; OK; 0.004815; 0; ]
+  [ 2; OK; 0.004676; 0; ]
+  [ 3; OK; 0.004848; 0; ]
+  [ 4; OK; 0.004796; 0; ]
+  [ 5; OK; 0.004817; 0; ]
+  [ 6; OK; 0.008131; 0; ]
+]
+}
+{
+title: Next Argument;
+file_name: test-next.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.900704; 0; ]
+  [ 2; OK; 0.004885; 0; ]
+  [ 3; OK; 0.004688; 0; ]
+]
+}
+{
+title: Nominus Arguments;
+file_name: test-nominus.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.860215; 0; ]
+  [ 2; OK; 0.004627; 0; ]
+]
+}
+{
+title: Options (Arguments Starting with '-');
+file_name: test-options.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.814878; 0; ]
+  [ 2; OK; 0.004516; 0; ]
+  [ 3; OK; 0.004640; 0; ]
+]
+}
+{
+title: Test the boolean type;
+file_name: test-bool.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ true; OK; 0.004867; 0; ]
+  [ false; OK; 0.005589; 0; ]
+  [ default; OK; 1.096538; -1934265137; ]
+]
+}
+{
+title: Variables;
+file_name: test-variables.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.882921; 0; ]
+  [ 2; OK; 0.004633; 0; ]
+  [ 3; OK; 0.004652; 0; ]
+]
+}
+{
+title: <Volker Mertens> 2026390 Hangup in Input File Parsing;
+title_group: Bug;
+build_time: 0.989250898361206;
+file_name: bug-2026390;
+hwut_info_time: 1514629336L;
+make_dependent_f: True;
+result_list: [
+  [ ; OK; 1.004938; 0; ]
+]
+}
+{
+title: <cmouton> 2990791 Bug with section names ending with slash;
+title_group: Bug;
+build_time: 0.9380800724029541;
+file_name: bug-2990791;
+hwut_info_time: 1514629337L;
+make_dependent_f: True;
+result_list: [
+  [ ; OK; 0.007289; 0; ]
+]
+}
+{
+title: <cmouton> Constraints with multiple parenthesis.;
+title_group: Bug;
+build_time: 0.9312629699707031;
+file_name: bug-2992224;
+hwut_info_time: 1514629335L;
+make_dependent_f: True;
+result_list: [
+  [ ; OK; 0.002238; 0; ]
+]
+}
+{
+title: Easy, Using '*_tails()';
+title_group: Directly Followed Arguments;
+file_name: test-tails.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.843120; 0; ]
+  [ 2; OK; 0.004871; 0; ]
+  [ 3; OK; 0.004664; 0; ]
+  [ 4; OK; 0.006115; 0; ]
+]
+}
+{
+title: Iteration;
+title_group: Directly Followed Arguments;
+file_name: test-direct-follow.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.827267; 0; ]
+  [ 2; OK; 0.004693; 0; ]
+  [ 3; OK; 0.004572; 0; ]
+  [ 4; OK; 0.006198; 0; ]
+  [ 5; OK; 0.004812; 0; ]
+]
+}
+{
+title: Any;
+title_group: Follow Arguments;
+file_name: test-follow.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.818787; 0; ]
+  [ 2; OK; 0.004667; 0; ]
+]
+}
+{
+title: Nominuses;
+title_group: Follow Arguments;
+file_name: test-nominus_followers.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.004635; 0; ]
+  [ 2; OK; 0.004899; 0; ]
+]
+}
+{
+title: Macro Expansion (Dollar Brackets);
+title_group: Input File Parsing;
+file_name: test-expand.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ ; OK; 0.874842; 0; ]
+]
+}
+{
+title: Simple Example;
+title_group: Input File Parsing;
+file_name: test-input-file.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+same_f: True;
+result_list: [
+  [ GetPot; OK; 0.004588; 0; ]
+  [ C; OK; 0.004594; 0; ]
+  [ Punk; OK; 0.004723; 0; ]
+  [ BASIC; OK; 0.903330; 0; ]
+  [ Latex; OK; 0.006151; 0; ]
+]
+}
+{
+title: Easy;
+title_group: UFO-Detection;
+file_name: test-ez-ufo.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.830555; 0; ]
+  [ 2; OK; 0.004688; 0; ]
+  [ 3; OK; 0.004322; 0; ]
+  [ 4; OK; 0.005833; 0; ]
+]
+}
+{
+title: User Specified Arguments;
+title_group: UFO-Detection;
+file_name: test-ufo.sh;
+hwut_info_time: 1509919722L;
+interpreter_list: [ bash; ]
+result_list: [
+  [ 1; OK; 0.950795; 0; ]
+  [ 2; OK; 0.004443; 0; ]
+  [ 3; OK; 0.845780; 0; ]
+  [ 4; OK; 0.005816; 0; ]
+  [ 5; OK; 0.004592; 0; ]
+  [ 6; OK; 0.004617; 0; ]
+]
+}

@@ -1,0 +1,17 @@
+cl.get(1, true)               = 0
+cl.get(1, false)              = 0
+cl("a", true)                 = 0
+cl("a", false)                = 0
+cl.get<bool>("b")             = 0
+cl.direct_follow(true, "-C")  = 0
+cl.direct_follow(false, "-C") = 0
+cl.follow(true,  "-d")        = 0
+cl.next(true)                 = 0
+cl.follow(false, "-e")        = 0
+cl.next(false)                = 0
+cl("f", 1, true)              = 0
+cl("f", 1, false)             = 0
+cl.set("i", my_i)             =>  my_i = 0
+cl.set("j", my_j)             =>  my_j = 0
+cl.set_variable("g", true)    =>  g = 1
+cl.set_variable("h", false)   =>  h = 0

@@ -1,0 +1,9 @@
+Specified Parameters:
+float   = 1e+37
+integer = 1968
+string  = sonderbar
+
+Vector elements:
+Element 0 (double) = 8.15
+Element 1 (string) = sourceforge
+Element 2 (int)    = 42

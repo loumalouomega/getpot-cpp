@@ -1,0 +1,5 @@
+../ufo -i source.cpp --force n=13 -xzt --options
+Unidentified Options (different from '--options',  '-h', '--help'):
+     -i
+     --force
+     -xzt

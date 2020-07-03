@@ -1,0 +1,1 @@
+../options --nice beep neep --slice --senal-acustica --do-nothing

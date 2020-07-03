@@ -1,0 +1,5 @@
+../ez-ufo yes no -i source.cpp --nominuses -o out.o gogo
+Unused Nominus Arguments (other than arguments after -i and -o):
+     yes
+     no
+     gogo

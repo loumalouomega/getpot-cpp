@@ -1,0 +1,58 @@
+<history date="Wed Mar 12 22:04:38 2014" element-n="48">
+    <day year="2010" month="04" day="22">
+        <history-init time="18:52:57"/>
+        <crc-error time="18:54:25" application="bug-2026390" choice="" database-crc="0" real-crc="125623791"/>
+        <crc-error time="18:54:25" application="test-absorb.sh" choice="" database-crc="-426724647" real-crc="1940676037"/>
+        <crc-error time="18:54:25" application="test-field-separator.sh" choice="" database-crc="734329967" real-crc="1328220017"/>
+        <crc-error time="18:54:25" application="test-filter.sh" choice="" database-crc="68494704" real-crc="648943636"/>
+        <crc-error time="18:54:25" application="test-flags.sh" choice="" database-crc="-1217937625" real-crc="-1710958773"/>
+        <crc-error time="18:54:25" application="test-get.sh" choice="" database-crc="-2080805916" real-crc="1073933488"/>
+        <crc-error time="18:54:25" application="test-next.sh" choice="" database-crc="543704507" real-crc="1374694892"/>
+        <crc-error time="18:54:25" application="test-nominus.sh" choice="" database-crc="-2001832168" real-crc="2126385622"/>
+        <crc-error time="18:54:25" application="test-options.sh" choice="" database-crc="1696763214" real-crc="2057479159"/>
+        <crc-error time="18:54:25" application="test-variables.sh" choice="" database-crc="498351742" real-crc="-787804264"/>
+        <crc-error time="18:54:25" application="test-tails.sh" choice="" database-crc="1146792316" real-crc="432258803"/>
+        <crc-error time="18:54:25" application="test-direct-follow.sh" choice="" database-crc="-1699148655" real-crc="-723645286"/>
+        <crc-error time="18:54:25" application="test-follow.sh" choice="" database-crc="1317175687" real-crc="545757019"/>
+        <crc-error time="18:54:25" application="test-nominus_followers.sh" choice="" database-crc="-1644515896" real-crc="212375258"/>
+        <crc-error time="18:54:25" application="test-expand.sh" choice="" database-crc="652928711" real-crc="2015543036"/>
+        <crc-error time="18:54:25" application="test-input-file.sh" choice="" database-crc="1490494199" real-crc="989887701"/>
+        <crc-error time="18:54:25" application="test-ez-ufo.sh" choice="" database-crc="966254959" real-crc="1427058358"/>
+        <crc-error time="18:54:25" application="test-ufo.sh" choice="" database-crc="-1696683999" real-crc="-243530715"/>
+    </day>
+    <day year="2010" month="04" day="23">
+        <crc-error time="18:54:35" application="test-input-file.sh" choice="C" database-crc="1811269380" real-crc="2134557062"/>
+        <crc-error time="18:54:35" application="test-input-file.sh" choice="Punk" database-crc="935676468" real-crc="2134557062"/>
+        <crc-error time="18:54:35" application="test-input-file.sh" choice="Latex" database-crc="-448195109" real-crc="2134557062"/>
+        <crc-error time="18:54:49" application="test-input-file.sh" choice="BASIC" database-crc="797918089" real-crc="2134557062"/>
+        <crc-error time="19:15:25" application="test-absorb.sh" choice="" database-crc="1940676037" real-crc="-271085196"/>
+    </day>
+    <day year="2010" month="04" day="25">
+        <crc-error time="04:30:12" application="test-absorb.sh" choice="1" database-crc="1936973938" real-crc="-1397608724"/>
+        <crc-error time="04:37:14" application="bug-2990791" choice="" database-crc="789596434" real-crc="348827066"/>
+        <crc-error time="05:17:26" application="test-absorb.sh" choice="1" database-crc="-1397608724" real-crc="-1286000428"/>
+        <crc-error time="05:17:41" application="test-absorb.sh" choice="2" database-crc="-1594465360" real-crc="-1863714714"/>
+        <crc-error time="05:43:17" application="test-filter.sh" choice="" database-crc="648943636" real-crc="-27794082"/>
+        <crc-error time="17:01:19" application="bug-2026390" choice="" database-crc="125623791" real-crc="-39575497"/>
+        <crc-error time="17:15:24" application="test-tails.sh" choice="1" database-crc="0" real-crc="-1258382498"/>
+        <crc-error time="17:15:24" application="test-tails.sh" choice="2" database-crc="0" real-crc="-1144613177"/>
+        <crc-error time="17:15:43" application="test-tails.sh" choice="3" database-crc="0" real-crc="-1957990201"/>
+        <crc-error time="17:15:48" application="test-tails.sh" choice="4" database-crc="0" real-crc="1610249111"/>
+    </day>
+    <day year="2010" month="04" day="26">
+        <crc-error time="08:13:27" application="test-get.sh" choice="0" database-crc="1697960327" real-crc="-906259687"/>
+        <crc-error time="08:13:27" application="test-get.sh" choice="1" database-crc="410365887" real-crc="-697381507"/>
+        <crc-error time="08:13:27" application="test-get.sh" choice="2" database-crc="-519749859" real-crc="1028751730"/>
+        <crc-error time="08:13:27" application="test-get.sh" choice="3" database-crc="-519749859" real-crc="1756723543"/>
+        <crc-error time="08:13:27" application="test-get.sh" choice="4" database-crc="90975089" real-crc="-1811399889"/>
+        <crc-error time="08:13:27" application="test-get.sh" choice="5" database-crc="90975089" real-crc="1806756470"/>
+        <crc-error time="08:13:27" application="test-get.sh" choice="6" database-crc="-239451328" real-crc="-1626905837"/>
+        <crc-error time="08:16:00" application="test-field-separator.sh" choice="1" database-crc="1616755209" real-crc="757263825"/>
+        <crc-error time="08:16:00" application="test-field-separator.sh" choice="2" database-crc="1625704862" real-crc="166710721"/>
+        <crc-error time="08:29:55" application="test-next.sh" choice="1" database-crc="-953181141" real-crc="209730497"/>
+        <crc-error time="08:29:55" application="test-next.sh" choice="2" database-crc="730900524" real-crc="-1862780828"/>
+        <crc-error time="08:29:55" application="test-next.sh" choice="3" database-crc="1992722442" real-crc="137699619"/>
+        <crc-error time="08:36:16" application="test-follow.sh" choice="1" database-crc="300485817" real-crc="4375623"/>
+        <crc-error time="08:36:16" application="test-follow.sh" choice="2" database-crc="-1213072939" real-crc="176031543"/>
+    </day>
+</history>

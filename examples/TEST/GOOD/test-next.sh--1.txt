@@ -1,0 +1,7 @@
+../next 0.1 123.4 'hallo welt' 21
+
+A = 0.1
+B = 123
+Name           = hallo welt
+Special number = 21
+

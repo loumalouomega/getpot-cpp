@@ -1,0 +1,105 @@
+% -*- getpot -*- GetPot mode activation for emacs
+%
+% Example input file to be parsed by 'GetPot'.
+%
+% Style of Comment: Original GetPot Style
+%
+% (C) 2001-2003 <fschaef@sourceforge.net> Frank R. Schaefer
+% License Terms: MIT
+%###############################################################################
+% (*) --------------------------------------------------------------------------
+%     examples dealing with input file parsing (input-file.py/.cpp/.java etc.)
+%-------------------------------------------------------------------------------
+booly_0 = real
+booly_1 = conceivable
+booly_2 = impossible
+
+constraint-test = 'test 2'
+clicks       = 231   % [1/s]
+acceleration = 1.231 % [m/s^2]
+
+[vehicle]
+wheel-base  =  8.1        % [m]
+initial-xyz = '100. 0.1  5.0' % [m]
+
+
+   [./tires]     % i.e. vehicle/tires/ 
+   % Coefficients for Pacejka's Magic Formula 
+   % Reference: Bakker, Nyborg, Pacejka: 
+   %            "Modelling for Use in Vehicle Dynamics Studies", 
+   %            SAE Technical Paper Series 870421, 1988
+   B = 3.7976    % [1]
+   C = 1.25      % [1]
+   E = -0.5      % [1]
+   D = 64322.404 % [N]  
+
+   [../chassis]  % i.e. vehicle/chassis/
+   Roh = 1.21    % [kg/m^3] density of air 
+   S   = 5.14    % [m^2]    reference surface
+   Cd  = 0.45    % [1]      air drag coefficient
+
+      [./doors]  % i.e. vehicle/chassis/doors/
+      number = 777
+      locks  = 'in place'
+
+
+% back to the root name space
+[] 
+webpage = http://getpot.sourceforge.net/index.html
+
+% some words about quotes and backslashes
+% (1) whitespace requires quotes
+user     = 'Frank Schaefer'                   
+% (2) backslashed quote => quote  
+latex-formula = '\\kappa\' = \\frac{d}{d s} \\kappa' 
+% (3) double backslash in quotes = backslash
+dos-file = 'C:\\Program Files\\Applications'
+
+% (*) --------------------------------------------------------------------------
+%     examples using the prefix filter (filter.py/.cpp/.java etc.)
+%-------------------------------------------------------------------------------
+[group]
+% playing with pseudo command line arguments:
+%   note that 
+%               '-x', '3134' and '--rudimental' 
+%   will be known as 
+%               'flags/-x', 'flags/3234' and 'flags/rudimental'.
+%
+%   Therefore 3134, for example, is **NOT** a number as long,
+%   as no prefix filter "flags/" is set.
+-x 3134 
+-b true vrai
+--rudimental 12 777
+
+[other]
+% this section will be skipped by the 'next' function when the prefix
+% is set
+nonsense
+
+[user-variables]
+% This section contains variables that the user defined himself.
+% The GetPot interpreter uses 'get_variable_names()' in order to
+% get to know their names.
+preview-coefficient   = '12 cm'
+lateral-side-distance = '2.1 m/s' 
+control-interval      = '0.1 s'
+compensation-ratio    = '0.4e34 rad/(m*s)'
+
+[pseudo-function-calls]
+% The following code shows how GetPot can be used to emulate
+% trivial function calls. Please, note that no syntax checking
+% can be provided by this method.
+LE-DEBUT
+smiley    sad
+new-line  1
+% draw rectangle width = 40, height = 10
+rectangle 40 10
+new-line  1
+smiley    happy
+% draw circle radius = 15
+circle   15
+new-line 1
+smiley   happy
+new-line 2
+LA-FIN
+

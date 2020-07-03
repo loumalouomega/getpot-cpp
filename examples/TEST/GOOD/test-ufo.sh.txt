@@ -1,0 +1,32 @@
+../ufo yes no -i source.cpp --arguments
+Unidentified Arguments (other than '--arguments', '-h', '--help', 'yes', 'no'):
+     -i
+     source.cpp
+../ufo -i source.cpp --force n=13 -xzt --options
+Unidentified Options (different from '--options',  '-h', '--help'):
+     -i
+     --force
+     -xzt
+../ufo zfd if=source.cpp force n=13 -l -zrt -olp --flags
+-- Unaccepted flags in argument 1:
+      'd'
+
+   Accepted flags: 'x' 'z' 'f' 'j' 'c' 't'
+
+-- Unaccepted flags in options (argument with one '-'):
+      'zop'
+      'op'
+      'p'
+
+   Accepted flags in options: 'l' 't' 'r' 'm'
+../ufo zfd x=12 y=234 loength=21 height=21 n=2 --variables
+Unidentified Variables (other than 'x', 'y', 'z', 'length', 'height'):
+     loength
+     n
+../ufo --sections # (edit file section labels in example.pot)
+Unidentified subsections of 'vehicle/' in file 'example.pot':
+    (none) add [..] section labels in file 'example.pot'.
+../ufo n=21 -i in.dat -o out.dat /etc/fstab force --nominuses 
+Unused Nominus Arguments (other than arguments after -i and -o):
+     /etc/fstab
+     force

@@ -1,0 +1,190 @@
+<test-database execution-time-sec="2.54" date="Wed Mar 12 22:04:38 2014">
+    <last-used-diff-display-program name=""/>
+    <test title="Variables" time-sum-sec="0.07"> 
+        <application file-name="test-variables.sh" info-request-time="1272279359L" vanished="False"/>
+        <choice-list number="3" same_result="False">
+           <choice name="1" result="OK" time_sec="0.04" crc="904215613"/>
+           <choice name="2" result="OK" time_sec="0.01" crc="1452518640"/>
+           <choice name="3" result="OK" time_sec="0.02" crc="149017261"/>
+        </choice-list>
+    </test>
+    <test title="Field Separator in Array Arguments" time-sum-sec="0.06"> 
+        <application file-name="test-field-separator.sh" info-request-time="1272279219L" vanished="False"/>
+        <choice-list number="2" same_result="False">
+           <choice name="1" result="OK" time_sec="0.04" crc="757263825"/>
+           <choice name="2" result="OK" time_sec="0.02" crc="166710721"/>
+        </choice-list>
+    </test>
+    <test title="Filter Prefixes" time-sum-sec="0.03"> 
+        <application file-name="test-filter.sh" info-request-time="1272279235L" vanished="False"/>
+        <choice-list number="1" same_result="False">
+           <choice name="" result="OK" time_sec="0.03" crc="305241299"/>
+        </choice-list>
+    </test>
+    <test title="Next Argument" time-sum-sec="0.07"> 
+        <application file-name="test-next.sh" info-request-time="1272279261L" vanished="False"/>
+        <choice-list number="3" same_result="False">
+           <choice name="1" result="OK" time_sec="0.04" crc="209730497"/>
+           <choice name="2" result="OK" time_sec="0.01" crc="-1862780828"/>
+           <choice name="3" result="OK" time_sec="0.02" crc="137699619"/>
+        </choice-list>
+    </test>
+    <test title="GetPot 'get' - function group" time-sum-sec="0.14"> 
+        <application file-name="test-get.sh" info-request-time="1272279250L" vanished="False"/>
+        <choice-list number="7" same_result="False">
+           <choice name="0" result="OK" time_sec="0.05" crc="-906259687"/>
+           <choice name="1" result="OK" time_sec="0.01" crc="-697381507"/>
+           <choice name="2" result="OK" time_sec="0.02" crc="1028751730"/>
+           <choice name="3" result="OK" time_sec="0.01" crc="1756723543"/>
+           <choice name="4" result="OK" time_sec="0.02" crc="-1811399889"/>
+           <choice name="5" result="OK" time_sec="0.02" crc="1806756470"/>
+           <choice name="6" result="OK" time_sec="0.01" crc="-1626905837"/>
+        </choice-list>
+    </test>
+    <test title="Options (Arguments Starting with '-')" time-sum-sec="0.06"> 
+        <application file-name="test-options.sh" info-request-time="1272279324L" vanished="False"/>
+        <choice-list number="3" same_result="False">
+           <choice name="1" result="OK" time_sec="0.03" crc="-1091178240"/>
+           <choice name="2" result="OK" time_sec="0.01" crc="-1402463905"/>
+           <choice name="3" result="OK" time_sec="0.02" crc="1403001610"/>
+        </choice-list>
+    </test>
+    <test title="Combining GetPot Objects - Absorbtion" time-sum-sec="0.07"> 
+        <application file-name="test-absorb.sh" info-request-time="1272279192L" vanished="False"/>
+        <choice-list number="2" same_result="False">
+           <choice name="1" result="OK" time_sec="0.05" crc="-1286000428"/>
+           <choice name="2" result="OK" time_sec="0.02" crc="-1863714714"/>
+        </choice-list>
+    </test>
+    <test title="Nominus Arguments" time-sum-sec="0.04"> 
+        <application file-name="test-nominus.sh" info-request-time="1272279319L" vanished="False"/>
+        <choice-list number="2" same_result="False">
+           <choice name="1" result="OK" time_sec="0.03" crc="-1041659777"/>
+           <choice name="2" result="OK" time_sec="0.01" crc="-1901749761"/>
+        </choice-list>
+    </test>
+    <test title="Flags" time-sum-sec="0.03"> 
+        <application file-name="test-flags.sh" info-request-time="1272279241L" vanished="False"/>
+        <choice-list number="2" same_result="False">
+           <choice name="1" result="OK" time_sec="0.02" crc="437215737"/>
+           <choice name="2" result="OK" time_sec="0.01" crc="677134322"/>
+        </choice-list>
+    </test>
+    <test title="Test the boolean type" time-sum-sec="0.05"> 
+        <application file-name="test-bool.sh" info-request-time="1272349460L" vanished="False"/>
+        <choice-list number="3" same_result="False">
+           <choice name="true" result="OK" time_sec="0.02" crc="234975309"/>
+           <choice name="false" result="OK" time_sec="0.02" crc="722525365"/>
+           <choice name="default" result="OK" time_sec="0.01" crc="1524203000"/>
+        </choice-list>
+    </test>
+    <group name="Bug">
+        <test title="&lt;cmouton&gt; Constraints with multiple parenthesis." make-dependent="True" time-sum-sec="0.03"> 
+            <application file-name="bug-2992224" info-request-time="1272349648L" vanished="False"/>
+            <make-procedure success="False" time_sec="2.165707"/>
+            <choice-list number="1" same_result="False">
+               <choice name="" result="OK" time_sec="0.03" crc="-1836831760"/>
+            </choice-list>
+        </test>
+        <test title="&lt;Volker Mertens&gt; 2026390 Hangup in Input File Parsing" make-dependent="True" time-sum-sec="1.04"> 
+            <application file-name="bug-2026390" info-request-time="1272349651L" vanished="False"/>
+            <make-procedure success="False" time_sec="2.310460"/>
+            <choice-list number="1" same_result="False">
+               <choice name="" result="OK" time_sec="1.04" crc="-39575497"/>
+            </choice-list>
+        </test>
+        <test title="&lt;cmouton&gt; 2990791 Bug with section names ending with slash" make-dependent="True" time-sum-sec="0.02"> 
+            <application file-name="bug-2990791" info-request-time="1272349653L" vanished="False"/>
+            <make-procedure success="False" time_sec="2.350753"/>
+            <choice-list number="1" same_result="False">
+               <choice name="" result="OK" time_sec="0.02" crc="348827066"/>
+            </choice-list>
+        </test>
+    </group>
+    <group name="Constraint">
+        <test title="(&lt;= 5 &amp; % 2) | (&gt; 5 &amp; ! % 2)" make-dependent="True" time-sum-sec="0.01"> 
+            <application file-name="bug-constraint" info-request-time="1272269413L" vanished="True"/>
+            <make-procedure success="False" time_sec="1.507600"/>
+            <choice-list number="1" same_result="False">
+               <choice name="" result="OK" time_sec="0.01" crc="-1836831760"/>
+            </choice-list>
+        </test>
+    </group>
+    <group name="Directly Followed Arguments">
+        <test title="Easy, Using '*_tails()'" time-sum-sec="0.11"> 
+            <application file-name="test-tails.sh" info-request-time="1272279335L" vanished="False"/>
+            <choice-list number="4" same_result="False">
+               <choice name="1" result="OK" time_sec="0.05" crc="-1258382498"/>
+               <choice name="2" result="OK" time_sec="0.02" crc="-1144613177"/>
+               <choice name="3" result="OK" time_sec="0.02" crc="-1957990201"/>
+               <choice name="4" result="OK" time_sec="0.02" crc="1610249111"/>
+            </choice-list>
+        </test>
+        <test title="Iteration" time-sum-sec="0.14"> 
+            <application file-name="test-direct-follow.sh" info-request-time="1272279200L" vanished="False"/>
+            <choice-list number="5" same_result="False">
+               <choice name="1" result="OK" time_sec="0.03" crc="295224838"/>
+               <choice name="2" result="OK" time_sec="0.02" crc="-907890121"/>
+               <choice name="3" result="OK" time_sec="0.03" crc="-253172107"/>
+               <choice name="4" result="OK" time_sec="0.03" crc="-57280606"/>
+               <choice name="5" result="OK" time_sec="0.03" crc="185525526"/>
+            </choice-list>
+        </test>
+    </group>
+    <group name="Follow Arguments">
+        <test title="Any" time-sum-sec="0.06"> 
+            <application file-name="test-follow.sh" info-request-time="1272279245L" vanished="False"/>
+            <choice-list number="2" same_result="False">
+               <choice name="1" result="OK" time_sec="0.03" crc="8164887"/>
+               <choice name="2" result="OK" time_sec="0.03" crc="-2127068259"/>
+            </choice-list>
+        </test>
+        <test title="Nominuses" time-sum-sec="0.08"> 
+            <application file-name="test-nominus_followers.sh" info-request-time="1272279266L" vanished="False"/>
+            <choice-list number="2" same_result="False">
+               <choice name="1" result="OK" time_sec="0.07" crc="-1983301759"/>
+               <choice name="2" result="OK" time_sec="0.01" crc="-419121632"/>
+            </choice-list>
+        </test>
+    </group>
+    <group name="Input File Parsing">
+        <test title="Macro Expansion (Dollar Brackets)" time-sum-sec="0.09"> 
+            <application file-name="test-expand.sh" info-request-time="1272279209L" vanished="False"/>
+            <choice-list number="1" same_result="False">
+               <choice name="" result="OK" time_sec="0.09" crc="2015543036"/>
+            </choice-list>
+        </test>
+        <test title="Simple Example" time-sum-sec="0.13"> 
+            <application file-name="test-input-file.sh" info-request-time="1272279255L" vanished="False"/>
+            <choice-list number="5" same_result="True">
+               <choice name="GetPot" result="OK" time_sec="0.05" crc="2134557062"/>
+               <choice name="C" result="OK" time_sec="0.02" crc="2134557062"/>
+               <choice name="Punk" result="OK" time_sec="0.02" crc="2134557062"/>
+               <choice name="BASIC" result="OK" time_sec="0.02" crc="2134557062"/>
+               <choice name="Latex" result="OK" time_sec="0.02" crc="2134557062"/>
+            </choice-list>
+        </test>
+    </group>
+    <group name="UFO-Detection">
+        <test title="Easy" time-sum-sec="0.08"> 
+            <application file-name="test-ez-ufo.sh" info-request-time="1272279214L" vanished="False"/>
+            <choice-list number="4" same_result="False">
+               <choice name="1" result="OK" time_sec="0.04" crc="-836242757"/>
+               <choice name="2" result="OK" time_sec="0.01" crc="1035385135"/>
+               <choice name="3" result="OK" time_sec="0.02" crc="723565462"/>
+               <choice name="4" result="OK" time_sec="0.01" crc="1741266888"/>
+            </choice-list>
+        </test>
+        <test title="User Specified Arguments" time-sum-sec="0.13"> 
+            <application file-name="test-ufo.sh" info-request-time="1272279354L" vanished="False"/>
+            <choice-list number="6" same_result="False">
+               <choice name="1" result="OK" time_sec="0.06" crc="1821149491"/>
+               <choice name="2" result="OK" time_sec="0.01" crc="-769087386"/>
+               <choice name="3" result="OK" time_sec="0.01" crc="14991935"/>
+               <choice name="4" result="OK" time_sec="0.02" crc="-2047535143"/>
+               <choice name="5" result="OK" time_sec="0.02" crc="-1595877553"/>
+               <choice name="6" result="OK" time_sec="0.01" crc="1875930076"/>
+            </choice-list>
+        </test>
+    </group>
+</test-database>

@@ -1,0 +1,21 @@
+../next 0.1 123.4 'hallo welt' 21
+
+A = 0.1
+B = 123
+Name           = hallo welt
+Special number = 21
+
+../next 'hallo welt' gugu 47.1 logo
+
+A = 0
+B = 256
+Name           = 47.1
+Special number = 66
+
+../next 0.000009 0.000009 12 65535 df aee ff 123 000d '\n'
+
+A = 9e-06
+B = 0
+Name           = 12
+Special number = 65535
+

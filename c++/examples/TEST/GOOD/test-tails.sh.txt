@@ -1,0 +1,44 @@
+../tails -U -Udu -Uschoene -Uwelt -V -V -V
+Strings following -U:
+   ''
+   'du'
+   'schoene'
+   'welt'
+Integers following -V:
+   '1'
+   '1'
+   '1'
+Doubles following -NUM:
+../tails -Uhallo -Udu -Uschoene -Uwelt -V1 -V2 -V3
+Strings following -U:
+   'hallo'
+   'du'
+   'schoene'
+   'welt'
+Integers following -V:
+   '1'
+   '2'
+   '3'
+Doubles following -NUM:
+../tails -Uhallo -Udu -Uschoene -Uwelt
+Strings following -U:
+   'hallo'
+   'du'
+   'schoene'
+   'welt'
+Integers following -V:
+Doubles following -NUM:
+../tails -U -Udu -Uschoene -Uwelt -V -V -V -NUM3.14 -NUM1.41 -NUM
+Strings following -U:
+   ''
+   'du'
+   'schoene'
+   'welt'
+Integers following -V:
+   '1'
+   '1'
+   '1'
+Doubles following -NUM:
+   '3.14'
+   '1.41'
+   '1'

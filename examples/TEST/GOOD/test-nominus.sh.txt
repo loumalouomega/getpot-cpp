@@ -1,0 +1,14 @@
+../nominus sss ddd fff
+
+(1) iterating with .next_nominus():
+    [sss]	[ddd]	[fff]	
+(2) extracting nominus vector, then iterating:
+    <sss>	<ddd>	<fff>	
+
+../nominus -v sss -a ddd variable=12 fff
+
+(1) iterating with .next_nominus():
+    [sss]	[ddd]	[variable=12]	[fff]	
+(2) extracting nominus vector, then iterating:
+    <sss>	<ddd>	<variable=12>	<fff>	
+

@@ -1,0 +1,4 @@
+../flags osterix
+first flag  = 1
+second flag = 0
+a, b, or c found = no

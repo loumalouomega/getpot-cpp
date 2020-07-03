@@ -1,0 +1,5 @@
+../nominus_followers -i Vladimir Georgy Angy --nono "
+                     -o chaos mess --output --ausgabe question
+
+inputs = Vladimir, Georgy, Angy, 
+outputs = chaos, mess, 
