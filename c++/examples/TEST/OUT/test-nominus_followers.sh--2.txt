@@ -1,4 +1,0 @@
-../nominus_followers -i Vladimir Georgy -oAngy
-
-inputs = Vladimir, Georgy, 
-outputs = 

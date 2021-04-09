@@ -1,3 +1,0 @@
-../options --nice beep neep --slice --senal-acustica
-Program terminated.
-Have a nice day.
