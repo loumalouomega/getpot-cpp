@@ -19,7 +19,7 @@
 #define __GETPOT_TRUE "vrai true"
 
 #include<iostream>
-#include<GetPot>
+#include <GetPot.hpp>
 
 using namespace std;
 

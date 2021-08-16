@@ -1,5 +1,5 @@
 #include<iostream>
-#include<GetPot>
+#include <GetPot.hpp>
 
 using namespace std;
 

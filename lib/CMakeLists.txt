@@ -1,0 +1,5 @@
+buildAndPackageLib(${PROJECT_NAME}
+	COMPONENT "lib"
+	DESCRIPTION "${PROJECT_DESCRIPTION}"
+	PUBLIC_INCLUDES ${Include_dir}
+)

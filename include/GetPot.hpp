@@ -1,3 +1,5 @@
+#pragma once
+
 // SPDX license identifier: MIT; Project 'GetPot'
 // MIT License
 //

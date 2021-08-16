@@ -1,9 +1,9 @@
 #include<iostream>
-#include<GetPot>
+#include <GetPot.hpp>
 #include<unistd.h>
 #include<sys/types.h>
 #include<signal.h>
-#include<support/C/hwut_unit.h>
+#include "support/C/hwut_unit.h"
 
 
 using namespace std;

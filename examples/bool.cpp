@@ -21,7 +21,7 @@
 // Let's assume our users are frenchmen and frenchwomen:
 #define GETPOT_SETTING_DEFAULT_FALSE_STRING_LIST "faux fausse"
 #define GETPOT_SETTING_DEFAULT_TRUE_STRING_LIST  "vrai vraie"
-#include<GetPot>
+#include <GetPot.hpp>
 
 using namespace std;
 

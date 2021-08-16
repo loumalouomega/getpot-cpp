@@ -48,6 +48,7 @@
  * otherwise, it is set to 'empty', so that normal object code is produced.     */
 #ifndef    __GETPOT_INLINE
 #   define __GETPOT_INLINE  /*empty*/
+#   define GETPOT_SHARED 1
 #endif
 
 /* The default values for strings that represent 'true' and 'false'             */
@@ -2524,8 +2525,9 @@ __GETPOT_INLINE STRING_VECTOR GetPot::__get_section_tree(const std::string& Full
 } // namespace GetPotNamespace.
 #endif
 
-#include "templates_inst.inc"
-
+#if defined(GETPOT_SHARED)
+	#include "templates_inst.inc"
+#endif
 
 #endif // __INCLUDE_GUARD_GETPOT_CPP__
 

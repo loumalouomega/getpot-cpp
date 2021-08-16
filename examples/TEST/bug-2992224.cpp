@@ -1,6 +1,6 @@
-#include <support/C/hwut_unit.h>
+#include "support/C/hwut_unit.h"
 #include <iostream>
-#include <GetPot>
+#include <GetPot.hpp>
 
 void test(const char* VariableName, GetPot&  cl);
 

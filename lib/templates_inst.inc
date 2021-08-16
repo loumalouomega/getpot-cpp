@@ -1,0 +1,36 @@
+#include <GetPot.hpp>
+
+template bool GetPot::direct_follow<bool>(bool, char const*);
+template bool GetPot::follow<bool>(bool, char const*);
+template bool GetPot::get<bool>(StringOrCharP);
+template bool GetPot::get<bool>(unsigned int, bool) const;
+template bool GetPot::next<bool>(bool);
+template bool GetPot::operator()<bool>(StringOrCharP, bool) const;
+template bool GetPot::operator()<bool>(StringOrCharP, unsigned int, bool) const;
+template char const* GetPot::direct_follow<char const*>(char const*, char const*);
+template char const* GetPot::follow<char const*>(char const*, char const*);
+template char const* GetPot::get<char const*>(StringOrCharP, char const*, char const*);
+template char const* GetPot::next<char const*>(char const*);
+template char const* GetPot::operator()<char const*>(StringOrCharP, char const*) const;
+template char const* GetPot::operator()<char const*>(StringOrCharP, unsigned int, char const*) const;
+template double GetPot::direct_follow<double>(double, char const*);
+template double GetPot::follow<double>(double, char const*);
+template double GetPot::follow<double>(double, unsigned int, char const*, ...);
+template double GetPot::get<double>(StringOrCharP, char const*);
+template double GetPot::get<double>(StringOrCharP, char const*, double);
+template double GetPot::get<double>(unsigned int, double) const;
+template double GetPot::next<double>(double);
+template double GetPot::operator()<double>(StringOrCharP, double) const;
+template double GetPot::operator()<double>(StringOrCharP, unsigned int, double) const;
+template int GetPot::direct_follow<int>(int, char const*);
+template int GetPot::follow<int>(int, char const*);
+template int GetPot::get<int>(unsigned int, int) const;
+template int GetPot::next<int>(int);
+template int GetPot::operator()<int>(StringOrCharP, int) const;
+template int GetPot::operator()<int>(StringOrCharP, unsigned int, int) const;
+template std::string GetPot::get<std::string>(StringOrCharP, char const*);
+template void GetPot::set<bool, bool>(StringOrCharP, bool&, char const*, bool);
+template void GetPot::set<bool>(StringOrCharP, bool&);
+template void GetPot::set<float, double>(StringOrCharP, float&, char const*, double);
+template void GetPot::set<int, int>(StringOrCharP, int&, char const*, int);
+template void GetPot::set<std::string, char const*>(StringOrCharP, std::string&, char const*, char const*);
