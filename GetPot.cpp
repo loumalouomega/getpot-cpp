@@ -2004,7 +2004,7 @@ GetPot::unidentified_options(const STRING_VECTOR& Knowns) const
 }
 
 __GETPOT_INLINE std::string
-GetPot::unidentified_flags(const char* KnownFlagList, int ArgumentNumber=-1) const
+GetPot::unidentified_flags(const char* KnownFlagList, int ArgumentNumber) const
     // Two modes:
     //  ArgumentNumber >= 0 check specific argument
     //  ArgumentNumber == -1 check all options starting with one '-'
@@ -2524,6 +2524,7 @@ __GETPOT_INLINE STRING_VECTOR GetPot::__get_section_tree(const std::string& Full
 } // namespace GetPotNamespace.
 #endif
 
+#include "templates_inst.inc"
 
 
 #endif // __INCLUDE_GUARD_GETPOT_CPP__

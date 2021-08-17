@@ -226,7 +226,7 @@ public:
     STRING_VECTOR   unidentified_options() const;
 
     std::string     unidentified_flags(const char* Known,
-                                       int         ArgumentNumber /* =-1 */) const;
+                                       int         ArgumentNumber =-1) const;
 
     STRING_VECTOR   unidentified_variables(unsigned Number, const char* Known, ...) const;
     STRING_VECTOR   unidentified_variables(const STRING_VECTOR& Knowns) const;
